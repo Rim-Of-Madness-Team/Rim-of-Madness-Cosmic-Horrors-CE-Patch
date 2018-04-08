@@ -25,7 +25,7 @@
         </targetParams>
     </Properties>
     <AmmoUser>
-      <magazineSize>6</magazineSize>
+      <magazineSize>100</magazineSize>
       <reloadTime>3.75</reloadTime>
       <ammoSet>AmmoSet_MiGoCastingWeapon</ammoSet>
     </AmmoUser>

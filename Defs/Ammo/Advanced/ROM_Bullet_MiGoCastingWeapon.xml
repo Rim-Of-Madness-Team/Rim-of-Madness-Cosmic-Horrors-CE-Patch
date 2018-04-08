@@ -8,11 +8,18 @@
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
 	
+	
+   <CombatExtended.AmmoCategoryDef>
+     <defName>AmmoCategoryMiGoCastingWeapon</defName>
+	 <label>MiGo Energy Hypercube</label>
+   </CombatExtended.AmmoCategoryDef>
+	
+	
 	<!-- ==================== AmmoSet ========================== -->
 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_MiGoCastingWeapon</defName>
-    <label>MiGo Casting Weapon ammo</label>
+    <label>MiGo Energy Hypercube</label>
     <ammoTypes>
       <Ammo_MiGoCastingWeapon>Bullet_MiGoCastingWeapon</Ammo_MiGoCastingWeapon>
     </ammoTypes>
@@ -21,7 +28,7 @@
 	<!-- ==================== Ammo ========================== -->
 
   <ThingDef Name="MiGoCastingWeaponBase" ParentName="AmmoBase" Abstract="True">
-    <description>MiGo Casting Weapon ammo</description>
+    <description>Utilized as a charging source for the MiGo casting weapon, the energy hypercube is a fascinating storage medium that baffles even a glitterworld's most ingenious engineers.</description>
     <statBases>
 	  <Mass>0.01</Mass>
 	  <Bulk>0.02</Bulk>
@@ -37,20 +44,21 @@
 
   <ThingDef ParentName="MiGoCastingWeaponBase">
     <defName>Ammo_MiGoCastingWeapon</defName>
-    <label>MiGo Casting Weapon cartridge</label>
+    <label>MiGo Energy Hypercube</label>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <texPath>Things/Ammo/MiGoHypercube</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>0.95</MarketValue>
     </statBases>
-    <ammoClass>FullMetalJacket</ammoClass>
+    <ammoClass>AmmoCategoryMiGoCastingWeapon</ammoClass>
   </ThingDef>
 	
 	<!-- ================== Projectiles ================== -->
 
   <ThingDef Name="BaseMiGoCastingWeapon" ParentName="BaseBullet" Abstract="true">
+    <thingClass>CombatExtended.BulletCE</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Charge_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>

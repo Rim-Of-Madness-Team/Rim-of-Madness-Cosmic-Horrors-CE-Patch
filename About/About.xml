@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Cosmic Horrors (CE compatibility patch)</name>
+  <name>Call of Cthulhu - Cosmic Horrors - CE Patch</name>
   <author>Saebbi</author>
   <targetVersion>0.18.0</targetVersion>
-  <description>
-Makes Cosmic Horrors mod compatible with Combat Extended.
-</description>
+  <description>Makes Cosmic Horrors mod compatible with Combat Extended.</description>
 </ModMetaData>
